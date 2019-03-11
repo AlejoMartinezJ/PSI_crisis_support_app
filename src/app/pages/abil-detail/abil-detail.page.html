@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="secondary">
+          <ion-button>
+            <ion-back-button></ion-back-button>
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="primary">
+          <ion-button>
+            <ion-icon slot="icon-only" name="contact"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title>Opcion 1</ion-title>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src="assets/images/tip/tip1.png"></ion-img>
+  <ion-grid fixed>
+    <ion-row justify-content-center align-items-center>
+      <ion-col size="12">
+        <h4 text-center>Ejercicio intenso</h4>
+        <ion-list>
+          <ion-item>
+            <p>Participa en ejercicios físicos intensos, aunque sea por un corto tiempo (subir y bajar escaleras)</p>
+          </ion-item>
+          <ion-item>
+            <p>Gasta la energía física acumulada del cuerpo corriendo, caminando rápido, saltando, jugando baloncesto, levantando pesas, etc.</p>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center align-items-center>
+      <ion-col size="6" text-center>
+        <ion-button (click)="newModal()" color="secondary" expand="block">
+          Listo
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

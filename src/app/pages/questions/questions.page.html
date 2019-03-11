@@ -1,0 +1,98 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="secondary">
+          <ion-button>
+            <ion-back-button></ion-back-button>
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="primary">
+          <ion-button>
+            <ion-icon slot="icon-only" name="contact"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title>Mis habilidades</ion-title>
+      </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+        <ion-card-content>
+          <ion-card-title text-center>Paso 1</ion-card-title>
+          <ion-card-subtitle margin-top>¿Que emocion predomina?</ion-card-subtitle>
+          <ion-grid fixed>
+            <ion-row justify-content-center align-items-center>
+              <ion-col size="4">
+                <ion-img src="assets/images/questions/anger.png"></ion-img>
+              </ion-col>
+              <ion-col size="4">
+                <ion-img src="assets/images/questions/sadness.png"></ion-img>
+              </ion-col>
+              <ion-col size="4">
+                <ion-img src="assets/images/questions/fear.png"></ion-img>
+              </ion-col>
+              <ion-col size="4">
+                <ion-img src="assets/images/questions/guilt.png"></ion-img>
+              </ion-col>
+              <ion-col size="4">
+                <ion-img src="assets/images/questions/shame.png"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-card-subtitle margin-top>¿Cuanta intesidad?</ion-card-subtitle>
+          <ion-range dualKnobs="false" min="0" max="10" step="1" snaps="true" pin="true"></ion-range>
+        </ion-card-content>
+        <ion-grid fixed>
+          <ion-row justify-content-center align-items-center>
+            <ion-col size="4">
+              <ion-button expand="block" color="secondary" (click)="next()">Siguiente</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <ion-card-content>
+          <ion-card-title text-center>Paso 2</ion-card-title>
+          <ion-card-subtitle margin-top>¿Que impulsos o compartamientos?</ion-card-subtitle>
+          <ion-grid fixed>
+            <ion-row justify-content-center align-items-center>
+              <ion-col size="4">
+                <ion-img src="assets/images/questions/suicide.png"></ion-img>
+              </ion-col>
+              <ion-col size="4">
+                <ion-img src="assets/images/questions/injury.png"></ion-img>
+              </ion-col>
+              <ion-col size="4">
+                <ion-img src="assets/images/questions/binge.png"></ion-img>
+              </ion-col>
+              <ion-col size="4">
+                <ion-img src="assets/images/questions/cry.png"></ion-img>
+              </ion-col>
+              <ion-col size="4">
+                <ion-img src="assets/images/questions/strike.png"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-card-subtitle margin-top>¿Cuanta intesidad?</ion-card-subtitle>
+          <ion-range dualKnobs="false" min="0" max="10" step="1" snaps="true" pin="true"></ion-range>
+        </ion-card-content>
+        <ion-grid fixed>
+          <ion-row justify-content-center align-items-center>
+            <ion-col size="4">
+              <ion-button expand="block" color="light">Atras</ion-button>
+            </ion-col>
+            <ion-col size="4">
+              <ion-button expand="block" color="secondary">Listo</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
