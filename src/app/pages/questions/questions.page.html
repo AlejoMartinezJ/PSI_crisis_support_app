@@ -17,7 +17,7 @@
 
 
 <ion-content padding>
-  <ion-slides pager="true" [options]="slideOpts">
+  <ion-slides pager="true" [options]="slideOpts" #IonSlides>
     <ion-slide>
       <ion-card>
         <ion-card-content>
@@ -48,7 +48,7 @@
         <ion-grid fixed>
           <ion-row justify-content-center align-items-center>
             <ion-col size="4">
-              <ion-button expand="block" color="secondary" (click)="next()">Siguiente</ion-button>
+              <ion-button expand="block" color="secondary" (click)="slideNext(IonSlides)">Siguiente</ion-button>
             </ion-col>
           </ion-row>
         </ion-grid>
@@ -85,10 +85,10 @@
         <ion-grid fixed>
           <ion-row justify-content-center align-items-center>
             <ion-col size="4">
-              <ion-button expand="block" color="light">Atras</ion-button>
+              <ion-button expand="block" color="light" (click)="slidePrev(IonSlides)">Atras</ion-button>
             </ion-col>
             <ion-col size="4">
-              <ion-button expand="block" color="secondary">Listo</ion-button>
+              <ion-button expand="block" color="secondary" (click)="goToTipp()">Listo</ion-button>
             </ion-col>
           </ion-row>
         </ion-grid>

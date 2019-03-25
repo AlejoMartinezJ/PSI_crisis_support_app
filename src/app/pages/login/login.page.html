@@ -8,14 +8,14 @@
   <ion-list>
     <ion-item no-padding>
       <ion-label position="floating"><ion-icon name="person" item-right></ion-icon> Usuario</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
     </ion-item>
     <ion-item no-padding>
       <ion-label position="floating"><ion-icon name="lock"></ion-icon> Contraseña</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
     </ion-item>
   </ion-list>
-  <ion-button expand="block" color="secondary" (click)="onClick()">
+  <ion-button expand="block" color="secondary" (click)="onSubmitLogin()">
     Entrar
   </ion-button>
 </ion-content>

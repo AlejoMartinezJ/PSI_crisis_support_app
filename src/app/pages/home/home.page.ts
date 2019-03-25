@@ -8,10 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor( private router:Router ) { }
-
-  ngOnInit() {
-  }
+  constructor( private router:Router
+  ) {}
 
   goToQuestions(){
     this.router.navigate(['/questions']);
