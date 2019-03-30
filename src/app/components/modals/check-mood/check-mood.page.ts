@@ -20,4 +20,9 @@ export class CheckMoodPage implements OnInit {
     this.dismiss();
     this.router.navigate(['/abilities'])
   }
+
+  goToHome(){
+    this.dismiss();
+    this.router.navigate(['/home'])
+  }
 }
